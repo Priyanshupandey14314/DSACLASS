@@ -1,6 +1,16 @@
 import java.util.Arrays;
 
 public class ArrayOps {
+    // Counting occurences
+    public void countOccurences(int num,int arr[]){
+        int count =0;
+        for(int n:arr){
+            if(n==num){
+                count++;
+            }
+        }
+        System.out.println("Element "+num+"found "+count+"times.");
+    }
     public static void main(String[] args) {
         // Array Equality
         int[] arr1 = {1, 2, 3, 4, 5};
@@ -9,19 +19,6 @@ public class ArrayOps {
 
         System.out.println(Arrays.equals(arr1, arr2)); // true
         System.out.println(Arrays.equals(arr1, arr3)); // false
-
-        // Counting occurences of an element
-         int[] arr = {1, 2, 3, 2, 4, 2, 5};
-        int target = 2;
-        int count = 0;
-
-        for (int num : arr) {
-            if (num == target) {
-                count++;
-            }
-        }
-
-        System.out.println("Element " + target + " occurs " + count + " times");
 
         // Finding index of an element
         int[] arr = {10, 20, 30, 40, 50};
