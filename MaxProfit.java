@@ -9,7 +9,6 @@ public class MaxProfit {
             bp=Math.min(bp,prices[i]);
             sp=prices[i];
             profit= Math.max(profit,sp-bp);
-            
         }
         System.out.println("Max profit is: "+profit);
     }
