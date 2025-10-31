@@ -14,7 +14,7 @@ public class NaniHouse {
         return toys;
     }
     public static void main(String[] args) {
-        int arr[] = {200,800,1200,1500,500,800,4000};
+        int arr[] = {100,200,300,400,1200,18000,1800,2000,3000,10000};
         System.out.println(carriable(arr));
     }
 }
